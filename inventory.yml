@@ -2,9 +2,9 @@
 
 nodes:
   hosts:
-    nodeVm:
-      ansible_host: 141.95.153.201
-      ansible_user: formation
+    nodeAws:
+      ansible_host: 52.55.13.210
+      ansible_user: admin
     node01:
       ansible_host: 192.168.15.10
       ansible_user: vagrant
