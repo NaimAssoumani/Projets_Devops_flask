@@ -31,27 +31,6 @@
         - apt-transport-https
      state: latest
     become: 'yes'
-  - name: Add Docker GPG apt Key
-    apt_key:
-       url: https://download.docker.com/linux/debian/gpg
-       state: present
-    become: 'yes'
-  - name: Add Docker Repository
-    apt_repository:
-      repo: "deb [arch=amd64] https://download.docker.com/linux/debian bullseye stable"
-      state: present
-      filename: docker
-    become: 'yes'
-  - name: Update apt and install docker-ce
-    apt:
-      name: 
-         - docker-ce
-         - docker-ce-cli
-         - containerd.io
-         - docker-compose-plugin
-      state: latest
-      update_cache: true
-    become: 'yes'
   - name: clone git
     git:
       repo: https://github.com/NaimAssoumani/Projets_Devops_flask
