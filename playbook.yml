@@ -35,7 +35,7 @@
     git:
       repo: https://github.com/NaimAssoumani/Projets_Devops_flask
       dest: /home/admin/AppFlask
-      version: preprod
+      version: nodocker
       clone: yes
       update: no
   - name: docker compose
